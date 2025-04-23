@@ -1,0 +1,16 @@
+<table *ngIf="product != undefined" class="tabela" [ngClass]= "{'checked': product.czyPromocja }">
+    <tr>
+        <td class="naglowki">Nazwa</td> 
+        <td class="naglowki">Cena</td>
+        <td class="naglowki">Data utworzenia</td>
+        <td class="naglowki">Dodaj do koszyka</td>
+    </tr>
+    <tr>
+        <td>{{product.nazwa}}</td>
+        <td>{{product.cena}} zl</td>
+        <td>{{product.dataUtworzenia}}</td>
+        <td><button (click) ="onDodaj()">Dodaj</button></td>
+    </tr>
+        </table>
+    
+    
